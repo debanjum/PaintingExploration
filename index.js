@@ -21,9 +21,9 @@ gsap.registerEffect({
 // for each section, we define the zoom data here
 const zoomData = [
   {scale: 1, origin: [0.5, 0.5]},
-  {scale: 3, origin: [0.25, 1]},
-  {scale: 3.4, origin: [0.2, 0.48]},
-  {scale: 3.4, origin: [0.8, 0.34]}
+  {scale: 4.5, origin: [0.25, 0.77]},
+  {scale: 4, origin: [0.2, 0.48]},
+  {scale: 4, origin: [0.8, 0.34]}
 ];
 
 // now loop through each section and create the ScrollTrigger accordingly.
