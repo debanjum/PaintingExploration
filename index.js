@@ -22,8 +22,8 @@ gsap.registerEffect({
 const zoomData = [
   {scale: 1, origin: [0.5, 0.5]},
   {scale: 3, origin: [0.25, 1]},
-  {scale: 1, origin: [0.5, 0.5]},
-  {scale: 2, origin: [0.8, 0.4]}
+  {scale: 3.4, origin: [0.2, 0.48]},
+  {scale: 3.4, origin: [0.8, 0.34]}
 ];
 
 // now loop through each section and create the ScrollTrigger accordingly.
@@ -36,7 +36,7 @@ gsap.utils.toArray("section").forEach((section, index) => {
     end: "+=95%",
     onToggle(self) {
       if (self.isActive) { // if it enters forward or backward
-        gsap.effects.zoom("#target img", {
+        gsap.effects.zoom("#painting img", {
           scale: zoom.scale,
           origin: zoom.origin,
           duration: 1,
