@@ -21,9 +21,9 @@ gsap.registerEffect({
 // for each section, we define the zoom data here
 const zoomData = [
   {scale: 1, origin: [0.5, 0.5]},
-  {scale: 4.5, origin: [0.25, 0.77]},
-  {scale: 4, origin: [0.2, 0.48]},
-  {scale: 4, origin: [0.8, 0.34]}
+  {scale: 3.5, origin: [0.27, 0.75]},
+  {scale: 5.5, origin: [0.21, 0.41]},
+  {scale: 3.6, origin: [0.805, 0.26]}
 ];
 
 // now loop through each section and create the ScrollTrigger accordingly.
@@ -32,7 +32,7 @@ gsap.utils.toArray("section").forEach((section, index) => {
   const zoom = zoomData[index];
   ScrollTrigger.create({
     trigger: section,
-    start: "top 85%",
+    start: "top 90%",
     end: "+=95%",
     onToggle(self) {
       if (self.isActive) { // if it enters forward or backward
